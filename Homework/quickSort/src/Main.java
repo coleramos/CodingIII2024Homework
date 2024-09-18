@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Main 
 {
-    public static void quickSort(int[] arr, int low, int high)
+    public static void quickSort(char[] arr, int low, int high)
     {
         if(low < high)
         {
@@ -12,21 +12,21 @@ public class Main
         }
     }
 
-    public static int partition(int[] arr, int low, int high)
+    public static int partition(char[] arr, int low, int high)
     {
-        int pivot = arr[high];
+        char pivot = arr[high];
         int i = low - 1;
         for (int j = low; j < high; j++)
         {
             if (arr[j] < pivot) 
             {
                 i++;
-                int temp = arr[i];
+                char temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
         }
-        int temp = arr[i + 1];
+        char temp = arr[i + 1];
         arr[i + 1] = arr[high];
         arr[high] = temp;
         return i + 1;
@@ -34,14 +34,14 @@ public class Main
 
     public static void main(String[] args)
     {
-        int[] arr = {3, 6, 5, 12, 45, 29, 2, 1, 5};
+        char[] arr = {'c', 'o', 'l' , 'e', 'r', 'a', 'm', 'o', 's'};
         quickSort(arr, 0, arr.length - 1);
         System.out.println("Sorted array: " + Arrays.toString(arr));
-        Boolean isUnique = uniqueNumber(arr);
-        System.out.println("Array has all unique numbers: " + isUnique);   
+        Boolean isUnique = uniqueCharacters(arr);
+        System.out.println("Array has all unique characters: " + isUnique);   
     }
 
-    public static Boolean uniqueNumber(int[] arr)
+    public static Boolean uniqueCharacters(char[] arr)
     {
         for (int i = 0; i < arr.length; i++) 
         {
