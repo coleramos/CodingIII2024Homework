@@ -32,12 +32,13 @@ public class Main
         int disciplesToTrain = 13;
         int yearsTrained = 3;
 
-        while (yearsTrained < years) 
-        {
+        while (yearsTrained < years) {
             disciplesToTrain = disciplesToTrain * 2;
             yearsTrained = yearsTrained + 3;
         }
 
         return disciplesToTrain;
     }
+
+    
 }
