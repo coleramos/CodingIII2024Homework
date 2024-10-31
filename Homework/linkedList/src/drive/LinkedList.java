@@ -163,7 +163,7 @@ public class LinkedList
     public static void main(String[] args) 
     {
         LinkedList list = new LinkedList();
-        list.addFirst(10);
+        list.addFirst(25);
         list.addFirst(5);
         list.addLast(15);
         list.printList(); 
