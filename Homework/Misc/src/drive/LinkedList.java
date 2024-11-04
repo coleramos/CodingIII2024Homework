@@ -179,3 +179,5 @@ public class LinkedList
         System.out.println("List length: " + list.getLength()); 
     }
 }
+
+//something
